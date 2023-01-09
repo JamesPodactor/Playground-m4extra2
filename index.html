@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Document</title>
+    <h1 class="container">Hotel Las Palmeras de Macondo</h1>
+</head>
+<body>
+    <div class="container">
+        <div class="col-36">
+            <h3>¿Qué habitación deseas?</h3>
+            <form action="#">
+                <label for="roomType">Tipos</label>
+                <select name="rooms" id="roomType">
+                    <option id="standardRoom" value="standard">Standard</option>
+                    <option id="juniorRoom" value="junior">Junior Suite</option>
+                    <option id="suiteRoom" value="suite">Suite</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-36">
+            <h3>¿Te gustaría utilizar nuestro SPA exclusivo?</h3>
+            <input type="checkbox" id="spa">Haz click aquí para reservar
+        </div>
+        <div class="col-36">
+            <h3>¿Cuántos huéspedes por habitación?</h3>
+            <form action="#">
+                <label for="guests">Ocupación</label>
+                <select name="guestNum" id="guests">
+                    <option value="individual">Individual</option>
+                    <option value="double">Doble</option>
+                    <option value="triple">Triple</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-36">
+            <h3>¿Cuántas noches te quedas con nosotros?</h3>
+            <input type="number" id="nights">
+        </div>
+        <div class="col-36">
+            <h3>¿Cuántas noches deseas usar el Parking privado del Hotel?</h3>
+            <input type="number" id="parking">
+        </div>
+        <div>
+            <h3>¿Listo para reservar?</h3>
+            <input type="submit" id="totalCost" value="Calcular precio" />
+            <h3 id ="myCost" type ="number">0</h3>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
